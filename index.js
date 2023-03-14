@@ -7,7 +7,7 @@ const inputEl = document.getElementById("input");
 const scoreEl = document.getElementById("score");
 
 
-let score = JSON.parse(localStorage.getItem("score"));
+let score = JSON.parse(localStorage.getItem("score"));      // JSON.parse convert the string into data;
 
 if(!score){
     score=0;
@@ -32,7 +32,7 @@ formEl.addEventListener("submit",()=>{
 });
 
 function updateLocalStorage(){
-    localStorage.setItem("score",JSON.stringify(score));
+    localStorage.setItem("score",JSON.stringify(score));        // ye score ko browser k localStroage me stroge kr deta hai.
 }
 
 console.log(score)
