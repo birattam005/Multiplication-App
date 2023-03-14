@@ -19,8 +19,9 @@ n1.innerText = `What is ${num1} multiply by ${num2}?`;
 
 const correctAns = num1*num2;
 
-formEl.addEventListener("submit",()=>{
-    const userAns = +inputEl.value
+formEl.addEventListener("submit",()=>{          // syntax  addEventListener(type, listener)  type = submit in html , listner= function 
+                                                // you can write.
+    const userAns = +inputEl.value                      // + sign before the inputE1.value it convert the user input into string.
     if(userAns === correctAns){
         score++;
         updateLocalStorage();
